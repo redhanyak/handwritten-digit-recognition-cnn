@@ -103,7 +103,9 @@ same as Model 2 trained using augmented dataset
 
 
 ## Limits and scope for future improvement
+
 - The model is learning the position of the digits in the canvas rather than the shape. This could possibly be solved by training the models using an augmentation where there is displacement in the image.
+- 
   ![alt_text](er_2.PNG)
   
 - Though the accuracy for each model is around 98.5%, there is a lot of error when it comes to the images that do not belong to the dataset. The app can have a database where the digits entered in the canvas are stored and periodically used for training
