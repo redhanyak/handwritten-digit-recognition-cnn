@@ -1,0 +1,109 @@
+/* Base styles */
+html, body {
+    background-color: #5a5858; /* Light gray background */
+    color: #333333; /* Subtle dark text */
+    font-family:  "Segoe UI";
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Importing the 'Inter' font */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap'); */
+
+/* Main container */
+.main-container {
+    text-align: center;
+    background-color: #ffffff; /* White card */
+    /* background-image: url('https://dimensionless.in/wp-content/uploads/2018/08/neural_network.png'); */
+    
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for elegance */
+    padding: 2rem;
+    width: 800px;
+    max-width: 600px;
+  }
+
+
+  /* Title styling */
+  .title {
+    font-size: 2rem;
+    font-family:'Lucida Sans', sans-serif ;
+    font-weight: 500;
+    color: #565555;
+    margin-bottom: 1.5rem;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Flex container for canvas and result */
+  .canvas-result-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  /* Canvas styling */
+  #mycanvas {
+    background-color: #f9f9f9; /* Light gray canvas */
+    border: 1px solid #dddddd; /* Subtle border */
+    border-radius: 8px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); /* Slight inner shadow */
+    width: 200px;
+    height: 200px;
+  }
+  
+  /* Result styling */
+  #result {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555555; /* Slightly muted text */
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* Buttons container */
+  .buttons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Button styling */
+  .button {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.5rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .button.is-info {
+    background-color: #e25959; /* Subtle white */
+    color: #ffffff;
+    border: 1px solid #e86464;
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.2); /* Soft shadow */ /* Light gray border */
+  }
+  
+  .button.is-info:hover {
+    background-color: #e6e6e6; /* Slightly darker hover */
+  }
+  
+  .button.is-success {
+    background-color: #3da756; /* Apple-like green */
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.2); /* Soft shadow */
+  }
+  
+  .button.is-success:hover {
+    background-color: #93bd9a; /* Darker green on hover */
+  }
+  

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Quiz</title>
+
+  <!-- Bulma CSS for styling -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+
+  <!-- jQuery for handling events -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  
+  <div class="main-container">
+    <div class="title">Write a digit</div>
+    <div class="back">
+    <form id="practice-form">
+      <div class="canvas-result-container">
+        <canvas id="mycanvas" width="200" height="200"></canvas>
+
+
+        
+
+        <div class="card" style="width: 100;align-content: center;height: 20rem;">
+
+          <div class="card-body">
+
+            <canvas id="barGraph"></canvas>
+
+
+
+            <div class="card"style="width: 10rem;align-content: center;height: 10rem;" >
+              <div class="card-body" >
+                <h5 class="card-title" style="font-size: 12rex;" id="result"></h5>
+              </div>
+            </div>
+
+            <!-- <div class="card-text" style="font-size: 1rex;">
+              Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the 
+            </div> -->
+            
+          </div>
+        </div>
+
+      </div>
+      <div class="buttons is-centered mt-4">
+        <a href="/" class="button is-info is-small">Clear</a>
+        <button
+        type="button"
+        class="button is-success is-small"
+        onclick="submitPixels()"
+        >
+        Check
+      </button>
+    </div>
+  </form>
+</div>
+  </div>
+</div>
+
+  <!-- External JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+</html>
