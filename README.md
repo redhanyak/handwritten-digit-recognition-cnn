@@ -2,7 +2,10 @@
 A handwritten recognition app using deep learning
 
 This is a simple Flask web application which accepts a handwritten digit and predicts the digit. Behind the hood is an ensemble of 3 different CNN models. These models are trained using MNIST dataset. One of the three models is trained using samples from MNIST dataset after augmentation. 
- 
+
+ ## User Interface
+
+![ui](ui.gif)
 
 ## Dataset
 The MNIST dataset comprises:
@@ -97,5 +100,19 @@ transform = transforms.Compose([
 ### Model 3 
 same as Model 2 trained using augmented dataset
 #### Test Accuracy - **98.62%**
+
+## Limits and scope for future improvement
+- The model is learning the position of the digits in the canvas rather than the shape. This could possibly be solved by training the models using an augmentation where there is displacement in the image.
+- Though the accuracy for each model is around 98.5%, there is a lot of error when it comes to the images that do not belong to the dataset. The app can have a database where the digits entered in the canvas are stored and periodically used for training
+- The interface can have a display of accuracy for the predictions done by the app.
+
+
+## Built with
+
+Python 3.8.1 - The main programming language used
+Pytorch- for training models
+Flask for Back-end,
+Chart-JS for generating charts
+
 
 
