@@ -101,6 +101,7 @@ transform = transforms.Compose([
 same as Model 2 trained using augmented dataset
 #### Test Accuracy - **98.62%**
 
+
 ## Limits and scope for future improvement
 - The model is learning the position of the digits in the canvas rather than the shape. This could possibly be solved by training the models using an augmentation where there is displacement in the image.
   ![alt_text](er_2.PNG)
@@ -111,10 +112,10 @@ same as Model 2 trained using augmented dataset
 
 ## Built with
 
-Python 3.8.1 - The main programming language used
-Pytorch- for training models
-Flask for Back-end,
-Chart-JS for generating charts
+- Python 3.8.1 - The main programming language used
+- Pytorch- for training models
+- Flask for Back-end,
+- Chart-JS for generating charts
 
 
 
